@@ -1,0 +1,21 @@
+{
+  "name": "asp.net",
+  "homepage": "https://github.com/Cheranga/BethanyPieShop",
+  "authors": [
+    "cheranga <cheranga@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.1.1",
+    "font-awesome": "Font-Awesome#v4.7.0"
+  }
+}
