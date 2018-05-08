@@ -28,3 +28,16 @@
   - https://app.pluralsight.com/library/courses/aspdotnet-core-2-0-mvc-application-visual-studio-2017/table-of-contents
   - https://app.pluralsight.com/library/courses/aspdotnetcore-web-application-building/table-of-contents
 
+> Passing Configuration Data
+
+For this add an `appsettings.json` file, to the solution. Then add a constructor to `Startup.cs`
+which will accept an `IConfiguration` instance. This instance will be passed by the ASP.NET CORE runtime when the application starts.
+
+> Using a DbContext and Seeding Data
+
+- In the `appsettings.json` file add the connection string.
+- Refer the `Startup.cs` file changes which accepts an `IConfiguration` instance as a dependency.
+- Create a class to initialize the database - `DbInitializer.cs`
+- Modify the `Program.cs` file to use the `DbInitializer.cs`
+
+
