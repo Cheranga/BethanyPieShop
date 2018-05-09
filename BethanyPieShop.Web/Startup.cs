@@ -28,6 +28,7 @@ namespace BethanyPieShop.Web
             services.AddDbContext<AppDbContext>(options => { options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")); });
 
             services.AddTransient<IPieRepository, PieRepository>();
+            services.AddTransient<IFeedbackRepository, FeedbackRepository>();
 
             services.AddMvc();
         }
