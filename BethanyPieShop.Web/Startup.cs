@@ -42,7 +42,7 @@ namespace BethanyPieShop.Web
 
             app.UseStatusCodePages()
                 .UseStaticFiles()
-                .UseMvcWithDefaultRoute();
+                .UseMvc(routes => { routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}"); });
 
             //app.Run(async (context) =>
             //{

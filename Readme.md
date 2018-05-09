@@ -40,4 +40,12 @@ which will accept an `IConfiguration` instance. This instance will be passed by 
 - Create a class to initialize the database - `DbInitializer.cs`
 - Modify the `Program.cs` file to use the `DbInitializer.cs`
 
+> `_ViewImports.cshtml`
 
+This is where you can organize the common namespaces, tag helpers which will be used in the views.
+
+```Razor
+@using BethanyPieShop.Web.Models;
+@using BethanyPieShop.Web.ViewModels;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+```
